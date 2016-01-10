@@ -6,9 +6,13 @@
   "main": "build/index.js",
   "files": [
     "build",
-    "package.json"
+    "package.json",
+    "Gruntfile.js",
+    "src"
   ],
-  "scripts": {},
+  "scripts": {
+    "install": "./node_modules/.bin/grunt package || :"
+  },
   "keywords": [
     "react",
     "react-component",
@@ -24,12 +28,7 @@
   "bugs": {
     "url": "https://github.com/ameyms/diffract/issues"
   },
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "^0.14.0",
-    "d3": "^3.3.0"
-  },
-  "devDependencies": {
+  "dependencies": {
     "babel": "^5.6.14",
     "babel-eslint": "^4.0.5",
     "babel-plugin-remove-console": "^1.0.1",
@@ -37,6 +36,7 @@
     "eslint-plugin-babel": "^2.0.0",
     "eslint-plugin-react": "^3.2.1",
     "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
     "grunt-babel": "^5.0.1",
     "grunt-browserify": "^4.0.0",
     "grunt-contrib-clean": "^0.6.0",
@@ -49,5 +49,10 @@
     "grunt-shell": "^1.1.2",
     "load-grunt-tasks": "^3.2.0",
     "time-grunt": "^1.1.0"
-  }
+  },
+  "peerDependencies": {
+    "react": "^0.14.0",
+    "d3": "^3.3.0"
+  },
+  "devDependencies": {}
 }
